@@ -1,0 +1,2 @@
+# scythe
+Scythe Discord Bot
