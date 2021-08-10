@@ -1,8 +1,5 @@
-# scythe
+# >Scythe
 Scythe Discord Bot
-
-
-**>Scythe Command List**
 
 To find out how to use a command, type the command to find proper usage syntax.
 
