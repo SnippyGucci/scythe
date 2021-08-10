@@ -19,7 +19,7 @@ public class Commands extends ListenerAdapter {
 				.setTitle(Scythe.prefix + "Scythe Command List")
 				.setDescription(descriptions())
 				.setColor(0x5404fc)
-				.setFooter("Created by Snippy#5386", "https://cdn.discordapp.com/avatars/287381178288177152/28952e196520b6e52a3e5aad1439c695.png?size=4096");
+				.setFooter("Created by Snippy#5386", "https://cdn.discordapp.com/avatars/287381178288177152/ebc2feda8c5b3fce0d7526d312b595bf.png?size=4096");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embInfo.build()).queueAfter(1, TimeUnit.SECONDS);

@@ -13,7 +13,7 @@ public class Spam extends Command {
         super.name = "spam";
         super.help = "Spam a message";
         super.category = new Category("Misc");
-        //super.cooldown = 15;
+        super.cooldown = 15;
         super.arguments = "[amount] [args]";
     }
 

@@ -10,7 +10,6 @@ public class BotInfo extends Command {
         super.name = "botinfo";
         super.help = "Get some information about Scythe";
         super.aliases = new String[]{"info", "scythe"};
-        super.cooldown = 5;
         super.arguments = "[bot]";
     }
 
@@ -21,7 +20,7 @@ public class BotInfo extends Command {
         EmbedBuilder eb = new EmbedBuilder()
                 .setColor(0x5404fc)
                 .setAuthor("Scythe", scythePFP, scythePFP)
-                .addField("Version", "0.1.4", true)
+                .addField("Version", "0.1.6", true)
                 .addField("Library", "JDA", true)
                 .addField("Creator", "Snippy#5386", true)
                 .setFooter("Uptime " + Uptime.upstring());

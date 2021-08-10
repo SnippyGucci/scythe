@@ -10,7 +10,6 @@ public class Uptime extends Command {
     public Uptime () {
         super.name = "uptime";
         super.help = "Scythe Uptime";
-        super.cooldown = 5;
     }
 
     protected void execute(CommandEvent event) {
@@ -23,7 +22,7 @@ public class Uptime extends Command {
     public static String upstring() {
         int seconds = (int) ((System.currentTimeMillis() - Scythe.enableUptime) / 1000) % 60 ;
         int minutes = (int) (((System.currentTimeMillis() - Scythe.enableUptime) / (1000*60)) % 60);
-        int hours   = (int) (((System.currentTimeMillis() - Scythe.enableUptime) / (1000*60*60)) % 24);
+        int hours = (int) (((System.currentTimeMillis() - Scythe.enableUptime) / (1000*60*60)) % 24);
 
         return hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
     }
