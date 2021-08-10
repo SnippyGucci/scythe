@@ -1,5 +1,4 @@
-# >Scythe
-Scythe Discord Bot
+# >Scythe Discord Bot
 
 To find out how to use a command, type the command to find proper usage syntax.
 
