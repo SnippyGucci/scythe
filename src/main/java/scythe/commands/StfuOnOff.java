@@ -49,7 +49,7 @@ public class StfuOnOff extends ListenerAdapter {
                 event.getChannel().sendMessage(setMarked).queue();
             } else {
                 name = event.getMessage().getMentionedMembers().get(0);
-                if (!name.getUser().getName().equalsIgnoreCase("Scythe")) {
+                if (!name.getUser().getName().equalsIgnoreCase("Scythe") && !memberArrayList.contains(name)) {
                     memberArrayList.add(name);
 
                     System.out.println(name);

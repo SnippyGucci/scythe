@@ -7,18 +7,13 @@ import club.minnced.discord.rpc.DiscordRPC;
 import club.minnced.discord.rpc.DiscordRichPresence;
 import com.jagrosh.jdautilities.command.CommandClient;
 import com.jagrosh.jdautilities.command.CommandClientBuilder;
-import com.jagrosh.jdautilities.command.GuildSettingsManager;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
-import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
-import net.dv8tion.jda.client.entities.Application;
-import org.jetbrains.annotations.Nullable;
-import scythe.autoResponder.Ping;
-import scythe.autoResponder.Stfu;
+import scythe.autoResponder.*;
 import scythe.commands.*;
 
 import java.io.File;
@@ -86,7 +81,8 @@ public class Scythe {
 
         jda.addEventListener(client);
 
-        /*TODO setup invite setter (needs to store set in offline file/database)
+        /*TODO end spam command
+         * setup invite setter (needs to store set in offline file/database)
          * make a role reqs (must be xxx role to do yyy task)
          * make a change prefix class <----- WIP
          * unrecognized command*/

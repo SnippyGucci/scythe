@@ -20,7 +20,7 @@ public class BotInfo extends Command {
         EmbedBuilder eb = new EmbedBuilder()
                 .setColor(0x5404fc)
                 .setAuthor("Scythe", scythePFP, scythePFP)
-                .addField("Version", "0.1.6", true)
+                .addField("Version", "0.1.7", true)
                 .addField("Library", "JDA", true)
                 .addField("Creator", "Snippy#5386", true)
                 .setFooter("Uptime " + Uptime.upstring());
