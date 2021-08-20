@@ -28,6 +28,7 @@ public class Spam extends Command {
                     .setTitle("Specify what you want to spam")
                     .setDescription("Usage: `" + Scythe.prefix + "spam [# of messages] [message]`\n*Limited to 99 messages!*");
             event.getChannel().sendMessageEmbeds(usage.build()).queue();
+
         } else {
             if (Integer.parseInt(args[1]) <= 0 || Integer.parseInt(args[1]) > 99) {
                 EmbedBuilder error = new EmbedBuilder();error.setColor(Color.RED)

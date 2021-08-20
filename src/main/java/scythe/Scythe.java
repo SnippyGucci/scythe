@@ -9,6 +9,7 @@ import com.jagrosh.jdautilities.command.CommandClient;
 import com.jagrosh.jdautilities.command.CommandClientBuilder;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
@@ -44,6 +45,7 @@ public class Scythe {
         builder.setPrefix(prefix);
         builder.setHelpWord("de74ujt5n55t516h5er14tdf61b64j651k"); // i don't want this, but jda utils insists :/
         builder.setActivity(Activity.competing("⠗⣐⠫⡷⠮⠺⢓⣤⢳⡒⠽⣬⣣⢮⡄⠙⣠⢃⣒⡑⣿⠀⡢⢕⠡⢊⡞⢼⠑⡰⣀⡣⡉⢘⡘⣒⡻⡀⠾⡺⢉⢏⣔⢓⡍⡝⠂⠜⢎⠬⣦⡬⢂⠟⡤⡷⡚⣖⠓⣷⡮⢅⣢⢵"));
+        //builder.setStatus(OnlineStatus.OFFLINE);
 
         commandListeners(builder);
         DiscordRPC();
