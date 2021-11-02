@@ -6,6 +6,7 @@ import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import scythe.Scythe;
+import scythe.autoResponder.Stfu;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -28,11 +29,11 @@ public class StfuOnOff extends ListenerAdapter {
                         .setTitle("Specify who you want to STFU")
                         .setDescription("Usage: `" + Scythe.prefix + "stfu [user]`\nUsage: `" + Scythe.prefix + "unstfu [user]`\nUsage: `" + Scythe.prefix + "stfu list`")
                         .setFooter("No, this does not mute them. >:)");
-                event.getChannel().sendMessage(usage.build()).queue();
+                event.getChannel().sendMessageEmbeds(usage.build()).queue();
 
             } else if (args[0].equalsIgnoreCase(Scythe.prefix + "stfu"))
                 shutUser(event, args);
-            else if (memberArrayList.size() > 0 && (event.getAuthor() == shutAuthor || onlySnipsUwU))
+            else if (memberArrayList.size() > 0)
                 unShutUser(event);
 
         }

