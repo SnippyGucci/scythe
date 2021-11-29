@@ -28,7 +28,7 @@ public class Stfu extends ListenerAdapter {
                     else
                         returnMessage += Character.toUpperCase(ch);
                 }
-                returnMessage += "* **stfu dummass bitch** <@" + event.getAuthor().getIdLong() + "> :middle_finger:";
+                returnMessage += "* **shut up** <@" + event.getAuthor().getIdLong() + "> :)";
 
                 event.getChannel().sendMessage(returnMessage).complete();
             }
