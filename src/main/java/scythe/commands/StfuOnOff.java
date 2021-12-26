@@ -75,7 +75,7 @@ public class StfuOnOff extends ListenerAdapter {
         }
     }
 
-    public void unShutUser (GuildMessageReceivedEvent event) {
+    public void unShutUser (GuildMessageReceivedEvent event) { //TODO UNSTFU ALL
         try {
             name = event.getMessage().getMentionedMembers().get(0);
             memberArrayList.remove(name);

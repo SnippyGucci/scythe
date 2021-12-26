@@ -44,7 +44,7 @@ public class Scythe {
         builder.setOwnerId("287381178288177152");
         builder.setPrefix(prefix);
         builder.setHelpWord("de74ujt5n55t516h5er14tdf61b64j651k"); // i don't want this, but jda utils insists :/
-        builder.setActivity(Activity.competing("⠗⣐⠫⡷⠮⠺⢓⣤⢳⡒⠽⣬⣣⢮⡄⠙⣠⢃⣒⡑⣿⠀⡢⢕⠡⢊⡞⢼⠑⡰⣀⡣⡉⢘⡘⣒⡻⡀⠾⡺⢉⢏⣔⢓⡍⡝⠂⠜⢎⠬⣦⡬⢂⠟⡤⡷⡚⣖⠓⣷⡮⢅⣢⢵"));
+        builder.setActivity(Activity.competing("the Decryption of Life"));
         //builder.setStatus(OnlineStatus.OFFLINE);
 
         commandListeners(builder);
@@ -61,7 +61,7 @@ public class Scythe {
         jda.addEventListener(new Invite());
         jda.addEventListener(new StfuOnOff());
         jda.addEventListener(new ConsoleText());
-        jda.addEventListener(new Mute());
+        //jda.addEventListener(new Mute()); //not working
 
         //auto responders
         jda.addEventListener(new Ping());
@@ -87,7 +87,10 @@ public class Scythe {
          * setup invite setter (needs to store set in offline file/database)
          * make a role reqs (must be xxx role to do yyy task)
          * make a change prefix class <----- WIP
-         * unrecognized command*/
+         * unrecognized command
+         * fix mute command
+         * read ConsoleText.java
+         * UNSTFU ALL */
     }
 
     //prefix getter and setter

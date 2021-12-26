@@ -19,7 +19,7 @@ public class Commands extends ListenerAdapter {
 				.setTitle(Scythe.prefix + "Scythe Command List")
 				.setDescription(descriptions())
 				.setColor(0x5404fc)
-				.setFooter("Created by Snippy#5386", "https://cdn.discordapp.com/avatars/287381178288177152/ebc2feda8c5b3fce0d7526d312b595bf.png?size=4096");
+				.setFooter("Created by Snippy#0757", "https://cdn.discordapp.com/avatars/287381178288177152/5f7bc1e678a47274156b7008189b664f.png?size=4096");
 			
 			event.getChannel().sendTyping().queue();
 			event.getChannel().sendMessageEmbeds(embInfo.build()).queueAfter(1, TimeUnit.SECONDS);
@@ -35,7 +35,7 @@ public class Commands extends ListenerAdapter {
 		description += ":point_right: `" + Scythe.prefix + "calc` - does addition, subtraction, multiplication, and division\n";
 		description += ":point_right: `" + Scythe.prefix + "cointoss` - tosses a coin. Heads or Tails\n";
 		description += ":point_right: `" + Scythe.prefix + "invite` - sends the invite link of the discord to the user\n";
-		description += ":point_right: `" + Scythe.prefix + "mute` - mutes user. *Role must have send messages off on desired channels!*\n";
+		//description += ":point_right: `" + Scythe.prefix + "mute` - mutes user. *Role must have send messages off on desired channels!*\n";
 		description += ":point_right: `" + Scythe.prefix + "purge` - deletes up to 100 messages up to 2 weeks old\n";
 		description += ":point_right: `" + Scythe.prefix + "rockpaperscissors` - rock paper scissors! :rock: :newspaper: :scissors:\n";
 		description += ":point_right: `" + Scythe.prefix + "serverinfo` - provides information on the server\n";

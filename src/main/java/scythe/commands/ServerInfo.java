@@ -16,7 +16,8 @@ public class ServerInfo extends Command {
 
     @Override
     protected void execute(CommandEvent event) {
-        //Makes an array that will hold all of the members
+        System.out.println("ServerInfo running!");
+
         String[] test = new String[event.getGuild().getMembers().size()];
         String description = "";
         for(int i = 0; i < event.getGuild().getMembers().size(); i++)

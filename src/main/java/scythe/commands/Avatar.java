@@ -14,7 +14,7 @@ public class Avatar extends Command {
         super.name = "avatar";
         super.help = "Get [user]'s avatar";
         super.aliases = new String[]{"av"};
-        super.cooldown = 10;
+        super.cooldown = 5;
         super.arguments = "[user]";
     }
 
